@@ -58,9 +58,9 @@ export default class Analyse extends Component<Props> {
     const colors = [
       //   "rgb(138, 0, 230, 0.8)",
       "#40CEE6",
-      "rgb(173, 51, 255, 0.8)",
-      "rgb(194, 102, 255, 0.8)",
-      "rgb(214, 153, 255, 0.8)"
+      "#87F3A6",
+      "#6E4A02",
+      "#A63166"
     ];
     const keys = ["water", "coffee", "coke", "limo"];
 

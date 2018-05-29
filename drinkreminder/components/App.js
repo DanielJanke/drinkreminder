@@ -7,6 +7,8 @@
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View, ScrollView, TouchableOpacity } from "react-native";
 
+import Shortcut from "./Shortcut";
+
 const instructions = Platform.select({
   ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
   android: "Double tap R on your keyboard to reload,\n" + "Shake or press menu button for dev menu"
@@ -44,78 +46,11 @@ export default class App extends Component<Props> {
         </View>
         <View style={styles.scrollViewContainer}>
           <ScrollView showsHorizontalScrollIndicator={false} horizontal={true} style={styles.scrollView}>
-            <TouchableOpacity
-              onPress={() => {
-                this._onPress(50);
-              }}
-              style={styles.shortcut}
-            >
-              <Text style={styles.ml}>50ml</Text>
-              <Text style={styles.type}>Wasser</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => {
-                this._onPress(100);
-              }}
-              style={styles.shortcut}
-            >
-              <Text style={styles.ml}>100ml</Text>
-              <Text style={styles.type}>Wasser</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => {
-                this._onPress(150);
-              }}
-              style={styles.shortcut}
-            >
-              <Text style={styles.ml}>150ml</Text>
-              <Text style={styles.type}>Wasser</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => {
-                this._onPress(200);
-              }}
-              style={styles.shortcut}
-            >
-              <Text style={styles.ml}>200ml</Text>
-              <Text style={styles.type}>Wasser</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => {
-                this._onPress(200);
-              }}
-              style={styles.shortcut}
-            >
-              <Text style={styles.ml}>200ml</Text>
-              <Text style={styles.type}>Wasser</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => {
-                this._onPress(200);
-              }}
-              style={styles.shortcut}
-            >
-              <Text style={styles.ml}>200ml</Text>
-              <Text style={styles.type}>Wasser</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => {
-                this._onPress(200);
-              }}
-              style={styles.shortcut}
-            >
-              <Text style={styles.ml}>200ml</Text>
-              <Text style={styles.type}>Wasser</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => {
-                this._onPress(200);
-              }}
-              style={styles.shortcut}
-            >
-              <Text style={styles.ml}>200ml</Text>
-              <Text style={styles.type}>Wasser</Text>
-            </TouchableOpacity>
+            <Shortcut color="#40CEE6" onClick={() => this._onPress(50)} amount={50} name="Wasser" />
+            <Shortcut color="#40CEE6" onClick={() => this._onPress(50)} amount={50} name="Wasser" />
+            <Shortcut color="#40CEE6" onClick={() => this._onPress(50)} amount={50} name="Wasser" />
+            <Shortcut color="#6E4A02" onClick={() => this._onPress(50)} amount={50} name="Kaffee" />
+            <Shortcut color="#6E4A02" onClick={() => this._onPress(50)} amount={50} name="Kaffee" />
           </ScrollView>
         </View>
       </View>

@@ -14,14 +14,16 @@ Navigation.startTabBasedApp({
   tabs: [
     {
       label: "Heute",
-      screen: "example.SecondTabScreen", // this is a registered name for a screen
+      screen: "example.FirstTabScreen",
+      //   screen: "example.SecondTabScreen", // this is a registered name for a screen
       //   icon: require('../img/one.png'),
       //   selectedIcon: require('../img/one_selected.png'), // iOS only
       title: "Screen One"
     },
     {
       label: "Auswertung",
-      screen: "example.FirstTabScreen",
+      //   screen: "example.FirstTabScreen",
+      screen: "example.SecondTabScreen",
       //   icon: require('../img/two.png'),
       //   selectedIcon: require('../img/two_selected.png'), // iOS only
       title: "Screen Two"
